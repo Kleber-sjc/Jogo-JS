@@ -86,7 +86,7 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 430px) {
     .menu {
         font-size: 14px;
     }
