@@ -3,6 +3,8 @@
     flex-direction: column;
     height: 100vh;
     background-image: url("../imagens/parede.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .menu {
@@ -21,6 +23,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .square {
@@ -44,4 +47,44 @@
 .menu-time h2:nth-child(2),
 .menu-score h2:nth-child(2) {
     margin-top: 13px;
+}
+
+@media (max-whidht: 768px) {
+    .menu {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .panel {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .square {
+        height: 100px;
+        width: 100px;
+    }
+
+    .menu-lives {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .menu-time h2:nth-child(2),
+    .menu-score h2:nth-child(2) {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .menu {
+        font-size: 14px;
+    }
+
+    .square {
+        height: 80px;
+        width: 80px;
+    }
 }
