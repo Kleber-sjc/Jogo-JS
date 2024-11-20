@@ -49,6 +49,13 @@
     margin-top: 13px;
 }
 
+footer {
+    background-color: gold;
+    
+    text-align: center;
+    font-size: 10px;
+}
+
 @media (max-whidht: 768px) {
     .menu {
         flex-direction: column;
