@@ -4,8 +4,7 @@
     height: 100vh;
     background-image: url("../imagens/parede.png");
     background-size: cover;
-    background-position: center;
-    overflow: hidden;
+    background-position: center;   
 }
 
 .menu {
@@ -20,7 +19,7 @@
     border-bottom: 5px solid gold;
 }
 .panel {
-    margin-top: 1rem;
+    margin-top: 6rem;
     display: flex;
     align-items: center;
     justify-content: center;
