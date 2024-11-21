@@ -28,8 +28,8 @@ function countDown() {
 }
 
 function playSound() {
-    let audio = new Audio('./src/audio-moeda.mp3');
-    audio.volume = 0.2;
+    let audio = new Audio('src/audio/retro-game.mp3');
+    audio.volume = 0.5;
     audio.play();
 }
 
