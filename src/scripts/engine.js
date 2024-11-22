@@ -28,7 +28,7 @@ function countDown() {
 }
 
 function playSound() {
-    let audio = new Audio('src/audio/retro-game.mp3');
+    let audio = new Audio('funy-adventure.mp3');
     audio.volume = 0.5;
     audio.play();
 }
@@ -55,7 +55,7 @@ function addListenerHitBox() {
               state.values.result++
               state.view.score.textContent = state.values.result;
               state.values.hitPosition = null;
-              //playSound();
+              playSound();
             }
         });
     });
@@ -67,6 +67,7 @@ function initialize() {
     state.view.timeLeft.textContent = state.values.curretTime;
     state.view.score.textContent = state.values.result;
 
+    playSound();
     state.values.countDownTimerId = setInterval(countDown, 1000);
     moveEnemy();
     addListenerHitBox();
